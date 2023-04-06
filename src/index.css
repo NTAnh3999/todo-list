@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "./components/ThemeButton/theme-btn.css";
+@import "./components/Content/content.css";
+@import "./components/Header/header.css";
+@import "./components/TodoItem/list-item.css";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+}
+.card {
+  width: 40vw;
+  margin: 5rem auto 0;
+  box-shadow: 3px 4px 3px #8f8f8f;
 }

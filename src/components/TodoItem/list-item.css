@@ -1,0 +1,13 @@
+.list-group-item {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-delete {
+  font-size: 1.2rem;
+  line-height: 0.8;
+  cursor: pointer;
+}
+.icon-delete:hover svg {
+  fill: #e35d6a;
+}

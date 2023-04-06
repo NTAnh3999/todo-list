@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Card, Container } from "reactstrap";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import { useContext } from "react";
+import { GlobalContext } from "./context";
+import { Toaster } from "react-hot-toast";
 function App() {
+  const { isDarkMode } = useContext(GlobalContext);
+  const themeColor = isDarkMode ? "dark" : "light";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Card color={themeColor} style={{ minHeight: "35vw" }}>
+        <Header isDarkMode={isDarkMode} />
+        <Content />
+      </Card>
+      <Toaster />
+    </Container>
   );
 }
 

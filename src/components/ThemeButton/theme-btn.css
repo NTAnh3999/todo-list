@@ -1,0 +1,28 @@
+.checkbox {
+  display: none;
+}
+.label {
+  width: 40px;
+  height: 20px;
+  background-color: #64748b;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+.ball {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(18px);
+}

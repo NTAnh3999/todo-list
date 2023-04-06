@@ -1,0 +1,6 @@
+.list-group-item-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
